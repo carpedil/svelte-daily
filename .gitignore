@@ -1,0 +1,80 @@
+# SvelteKit .gitignore Template
+
+# Dependency directories
+node_modules/
+pnpm-lock.yaml
+yarn.lock
+
+# Log files
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+
+# Environment variables
+# .env
+.env.local
+.env.*.local
+
+# Build files
+dist/
+build/
+*.js
+*.css
+*.map
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.sublime-*
+*.bak.*
+
+# Other
+*.log
+*.lock
+*.md
+*.mdx
+*.mdx.md
+*.svelte.md
+*.svelte.mdx
+*.sveltekit.md
+*.sveltekit.mdx
+
+# SvelteKit specific
+.svelte-kit/
+*.svelte-kit/
+*.svelte-kit.json
+
+# Ignore package-lock.json if package.json exists
+package-lock.json
+!package.json
+
+# Ignore yarn.lock if package.json exists
+yarn.lock
+!package.json
+
+# Ignore .env files that are not environment specific
+.env
+!.env.development
+!.env.production
+
+# Ignore all .svelte files that are not part of the project
+*.svelte
+!src/**/*.svelte
+!src/**/*.svelte.d.ts
+
+# Ignore all .js and .css files that are not part of the project
+*.js
+*.css
+!src/**/*.js
+!src/**/*.css
+
+# Ignore all .map files that are not part of the project
+*.map
+!src/**/*.map
